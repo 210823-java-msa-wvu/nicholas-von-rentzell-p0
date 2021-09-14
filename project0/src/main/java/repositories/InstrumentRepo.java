@@ -13,7 +13,7 @@ public class InstrumentRepo {
     private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
 
     // Read instrument
-    public Instrument getByInstrument (String instrumentTitle) {
+    public Instrument getByInstrument(String instrumentTitle) {
 
         try (Connection conn = cu.getConnection()) {
 

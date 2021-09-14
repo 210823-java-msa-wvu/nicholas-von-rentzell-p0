@@ -47,7 +47,7 @@ public class ProjectRepo {
 
         try (Connection conn = cu.getConnection()) {
 
-            String sql = "insert into music_app\"projects\" values (default, ?, ?, ?) returning *";
+            String sql = "insert into music_app.\"projects\" values (default, ?, ?, ?) returning *";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, pName);

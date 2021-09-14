@@ -17,7 +17,7 @@ public class LoopRepo {
 
         try (Connection conn = cu.getConnection()) {
 
-            String sql = "select * from music_app\"loops\" where loop_title = ?";
+            String sql = "select * from music_app.\"loops\" where loop_title = ?";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, loopTitle);

@@ -17,7 +17,7 @@ public class UserRepo {
 
         try (Connection conn = cu.getConnection()) {
 
-            String sql = "select * from music_app\"users\" where username = ?";
+            String sql = "select * from music_app.\"users\" where username = ?";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, username);
